@@ -9,7 +9,7 @@
 const moment = require('moment')
 const childProcess = require('child_process')
 const path = require('path')
-const FileHandler = require('./fileHandler')
+const { FileHandler } = require('node-rtsp-recorder')
 
 const fh = new FileHandler()
 
