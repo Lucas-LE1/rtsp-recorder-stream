@@ -4,11 +4,11 @@
 [![License](https://img.shields.io/npm/l/node-rtsp-recorder.svg)](https://github.com/example/node-rtsp-recorder/blob/master/ LICENSE)
 [npm package rtsp-relay](https://www.npmjs.com/package/rtsp-relay)
 
-##Description
+## Description
 
 This Node.js module uses the ```node-rtsp-recorder``` library to record RTSP video streams. It exports three main classes: ```Recorder```, ```FileHandler``` and ```Stream```.
 
-##Installation
+## Installation
 
 Use npm to install ```node-rtsp-recorder```:
 
