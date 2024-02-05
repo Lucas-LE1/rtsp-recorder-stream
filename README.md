@@ -1,50 +1,56 @@
-# Node RTSP Recorder
+# Node RTSP recorder
 
-## Descrição
-Este módulo Node.js utiliza a biblioteca node-rtsp-recorder para gravar fluxos de vídeo RTSP. Ele exporta três classes principais: Recorder, FileHandler e Stream.
+[![NPM Version](https://img.shields.io/npm/v/node-rtsp-recorder.svg)](https://www.npmjs.com/package/node-rtsp-recorder)
+[![License](https://img.shields.io/npm/l/node-rtsp-recorder.svg)](https://github.com/example/node-rtsp-recorder/blob/master/ LICENSE)
+[npm package rtsp-relay](https://www.npmjs.com/package/rtsp-relay)
 
-## Instalação
-Use o npm para instalar o node-rtsp-recorder:
+##Description
+
+This Node.js module uses the ```node-rtsp-recorder``` library to record RTSP video streams. It exports three main classes: ```Recorder```, ```FileHandler``` and ```Stream```.
+
+##Installation
+
+Use npm to install ```node-rtsp-recorder```:
 
 ```bash
-Copy code
-npm install node-rtsp-recorder
+npm install node-rtsp recorder
 ```
-## Classes Exportadas
-1. Recorder
-A classe Recorder é responsável por gravar streams RTSP. Para detalhes de uso, consulte a documentação oficial da biblioteca aqui.
 
-2. FileHandler
-A classe FileHandler manipula arquivos resultantes da gravação dos streams RTSP. Documentação aqui.
+## Exported Classes
+
+1. Recorder
+The Recorder class is responsible for recording RTSP streams. For usage details, see the official library documentation.
+
+2. File Handler
+The FileHandler class manipulates files resulting from recording RTSP streams.
 
 3. Stream
-A classe Stream (implementação não fornecida neste código) pode ser utilizada como helper para simplificar o uso do node-rtsp-recorder.
+The Stream class (implementation not provided in this code) can be used as a helper to simplify the use of rtsp-relay.
 
-## Exemplo de Uso
-Descomente e adapte o seguinte trecho para configurar e iniciar um streaming:
+## Example of use
+Uncomment and adapt the following excerpt to configure and start streaming:
 
 ```javascript
-Copy code
 const { Recorder, FileHandler } = require("node-rtsp-recorder");
-const { Stream } = require("./src/helpers/stream");
+const {Stream} = require("./src/helpers/stream");
 
 module.exports = {
   Recorder: Recorder,
-  FileHandler: FileHandler,
-  Stream: Stream
+  File Handler: File Handler,
+  Transmission: Transmission
 }
 
-// Exemplo de uso:
+// Example of use:
 // const streamingConfigs = [
-//   { user: "admin", password: "cam", ip: '192.168.1.112:554', rtspPath: '/onvif1' },
+// {user: "admin", password: "cam", ip: '192.168.1.112:554', rtspPath: '/onvif1' },
 // ];
-// new Stream( app, {}, streamingConfigs)
+// new Stream(app, {}, streamingConfigs)
 ```
 
-Forneça as configurações corretas para o streaming, incluindo credenciais de usuário, senha, endereço IP e caminho RTSP.
+Provide the correct settings for streaming, including user credentials, password, IP address, and RTSP path.
 
-### Contribuições
-Contribuições são bem-vindas. Sinta-se à vontade para abrir issues e pull requests.
+### Contributions
+Contributions are welcome. Feel free to open issues and pull requests.
 
-## Licença
-Este projeto é licenciado sob a Licença MIT.
+## License
+This project is licensed under the MIT License.
