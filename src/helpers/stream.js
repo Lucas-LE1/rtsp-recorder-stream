@@ -18,11 +18,14 @@
 * }} streamConfigs
 */
 
+var urlBrowser
+
 class Stream {
   /** @param {Options} props */
   /** @param {streamConfigs} props */
   constructor(app, { additionalFlags, verbose, transport, windowsHide }, streamingConfigs = []) {
-    const { proxy } = require('rtsp-relay')(app);
+    const { proxy,scriptUrl } = require('rtsp-relay')(app);
+    urlBrowser = scriptUrl
 
     streamingConfigs.forEach((config, index) => {
       const rtspUrl = `rtsp://${config.user}:${config.password}@${config.ip}${config.rtspPath}`;
@@ -33,6 +36,7 @@ class Stream {
 }
 
 module.exports = {
-  Stream: Stream
+  Stream: Stream,
+  scriptUrl: urlBrowser
 }
 

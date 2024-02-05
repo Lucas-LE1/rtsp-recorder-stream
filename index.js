@@ -1,11 +1,12 @@
 const { FileHandler } = require("node-rtsp-recorder");
-const { Stream } = require("./src/helpers/stream");
+const { Stream, scriptUrl } = require("./src/helpers/stream");
 const RTSPRecorder = require("./src/helpers/recorder");
 
 module.exports = {
   Recorder: RTSPRecorder,
   FileHandler: FileHandler,
-  Stream: Stream
+  Stream: Stream,
+  scriptUrl: scriptUrl
 }
 
 // const streamingConfigs = [
