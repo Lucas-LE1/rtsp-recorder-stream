@@ -6,7 +6,7 @@ module.exports = {
   Recorder: RTSPRecorder,
   FileHandler: FileHandler,
   Stream: Stream,
-  // scriptUrl: scriptUrl
+  scriptUrl: scriptUrl
 }
 
 // const streamingConfigs = [
