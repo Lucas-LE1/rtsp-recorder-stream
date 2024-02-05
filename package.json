@@ -1,6 +1,6 @@
 {
   "name": "rtsp-recorder-stream",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "RTSP Recorder and Stream",
   "main": "index.js",
   "scripts": {
